@@ -6,18 +6,14 @@ void setup() {
   Serial.begin(9600);
 }
 void loop() {
-  if(digitalRead(2)==HIGH){
-    Serial.println("HIGH");
-  }
-  else {  
-    Serial.println("LOW");
-  }
+if(digitalRead(2)==HIGH){ 
   digitalWrite(12, HIGH);
   digitalWrite(11, LOW);
-  tone(7 ,1000, 2000);
-  delay(500);
+  tone(7 ,1000, 50);
+  delay(50);
   digitalWrite(12, LOW);
   digitalWrite(11, HIGH);
-  tone(7, 800, 2000);
-  delay(500); 
+  tone(7, 2000, 50);
+  delay(50); 
+}
 }
